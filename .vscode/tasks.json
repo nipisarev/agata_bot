@@ -1,0 +1,89 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build ESP32 Project",
+			"type": "shell",
+			"command": "idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Build ESP32 with Environment",
+			"type": "shell",
+			"command": "source ~/Projects/ESP32/ESP-IDF/v5.5/esp-idf/export.sh && idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Reinstall ESP-IDF and Build",
+			"type": "shell",
+			"command": "cd ~/Projects/ESP32/ESP-IDF/v5.5/esp-idf && ./install.sh && source export.sh && cd /Users/npisarev/Projects/ESP32/ESP32-Agata-robot && idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Convert Images",
+			"type": "shell",
+			"command": "python3 convert_images.py",
+			"group": "build"
+		},
+		{
+			"label": "Install Pillow",
+			"type": "shell",
+			"command": "pip3 install Pillow",
+			"group": "build"
+		},
+		{
+			"label": "Convert Images Again",
+			"type": "shell",
+			"command": "python3 convert_images.py",
+			"group": "build"
+		},
+		{
+			"label": "Build Dual Animation",
+			"type": "shell",
+			"command": "idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Build with ESP-IDF",
+			"type": "shell",
+			"command": "source ~/esp/esp-idf/export.sh && idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Fresh Build",
+			"type": "shell",
+			"command": "source ~/Projects/ESP32/ESP-IDF/v5.5/esp-idf/export.sh && idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Full Clean and Build",
+			"type": "shell",
+			"command": "source ~/Projects/ESP32/ESP-IDF/v5.5/esp-idf/export.sh && idf.py fullclean && idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Build with All Images",
+			"type": "shell",
+			"command": "source ~/Projects/ESP32/ESP-IDF/v5.5/esp-idf/export.sh && idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Build with Larger Partition",
+			"type": "shell",
+			"command": "source ~/Projects/ESP32/ESP-IDF/v5.5/esp-idf/export.sh && idf.py build",
+			"group": "build"
+		},
+		{
+			"label": "Flash with Custom Partitions",
+			"type": "shell",
+			"command": "source ~/Projects/ESP32/ESP-IDF/v5.5/esp-idf/export.sh && idf.py flash",
+			"group": "build"
+		},
+		{
+			"label": "Clean Build and Flash",
+			"type": "shell",
+			"command": "source ~/Projects/ESP32/ESP-IDF/v5.5/esp-idf/export.sh && idf.py fullclean && idf.py build && idf.py flash",
+			"group": "build"
+		}
+	]
+}

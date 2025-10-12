@@ -1,0 +1,273 @@
+Command: /Users/npisarev/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/esp32-agata-robot.elf /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/bootloader/bootloader.elf -m '/Users/npisarev/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/tools/idf.py'
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x6c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001a378
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1744
+load:0x4086b910,len:0xe78
+load:0x4086e610,len:0x31c4
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Sep  8 2025 03:52:33[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 4MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00338000[0m
+[0;32mI (71) boot:  3 storage          Unknown data     01 81 00348000 000b0000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=42020020 size=30deech (3202796) map[0m
+[0;32mI (698) esp_image: segment 1: paddr=0031df14 vaddr=40800000 size=02104h (  8452) load[0m
+[0;32mI (701) esp_image: segment 2: paddr=00320020 vaddr=42000020 size=17d74h ( 97652) map[0m
+[0;32mI (721) esp_image: segment 3: paddr=00337d9c vaddr=40802104 size=0ba00h ( 47616) load[0m
+[0;32mI (732) esp_image: segment 4: paddr=003437a4 vaddr=4080db10 size=0197ch (  6524) load[0m
+[0;32mI (734) esp_image: segment 5: paddr=00345128 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (739) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (741) boot: Disabling RNG early entropy source...[0m
+[0;32mI (757) cpu_start: Unicore app[0m
+[0;32mI (766) cpu_start: Pro cpu start user code[0m
+[0;32mI (766) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (766) app_init: Application information:[0m
+[0;32mI (767) app_init: Project name:     esp32-agata-robot[0m
+[0;32mI (771) app_init: App version:      1[0m
+[0;32mI (774) app_init: Compile time:     Sep  8 2025 03:50:48[0m
+[0;32mI (779) app_init: ELF file SHA256:  e3c517783...[0m
+[0;32mI (783) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (788) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (791) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (795) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (799) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (806) heap_init: At 40810430 len 0006C1E0 (432 KiB): RAM[0m
+[0;32mI (811) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (816) heap_init: At 50000020 len 00003FC8 (15 KiB): RTCRAM[0m
+[0;32mI (822) spi_flash: detected chip: generic[0m
+[0;32mI (825) spi_flash: flash io: dio[0m
+[0;33mW (828) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (840) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (846) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (853) coexist: coex firmware version: 831ec70[0m
+[0;32mI (857) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (862) main_task: Started on CPU0[0m
+[0;32mI (862) main_task: Calling app_main()[0m
+[0;32mI (862) AGATA_SLIDESHOW: ESP32 AGATA Robot Slideshow Starting[0m
+[0;32mI (872) AGATA_SLIDESHOW: Backlight set to 25% brightness to prevent overheating[0m
+[0;32mI (2662) AGATA_SLIDESHOW: Display initialized, preparing for slideshow[0m
+[0;32mI (2662) AGATA_SLIDESHOW: Clearing display with black background[0m
+[0;32mI (2772) AGATA_SLIDESHOW: Display cleared to black[0m
+[0;32mI (3272) AGATA_SLIDESHOW: Display cleared[0m
+[0;32mI (3272) AGATA_SLIDESHOW: starting dual animation system: init (18 frames) + hi loop (11 frames)[0m
+[0;32mI (3272) AGATA_SLIDESHOW: Starting dual animation system - init (18 frames) then hi loop (11 frames)[0m
+[0;32mI (3282) AGATA_SLIDESHOW: Clearing display with black background[0m
+[0;32mI (3402) AGATA_SLIDESHOW: Display cleared to black[0m
+[0;32mI (3402) AGATA_SLIDESHOW: Dual animation system started - init: 18 frames, hi loop: 11 frames[0m
+[0;32mI (3702) AGATA_SLIDESHOW: Playing init animation - frame 1/18[0m
+[0;32mI (3702) AGATA_SLIDESHOW: Displaying init slide 0: 172x320 (55040 pixels)[0m
+[0;32mI (3702) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (3702) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (3842) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (4142) AGATA_SLIDESHOW: Playing init animation - frame 2/18[0m
+[0;32mI (4142) AGATA_SLIDESHOW: Displaying init slide 1: 172x320 (55040 pixels)[0m
+[0;32mI (4142) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (4142) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (4282) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (4582) AGATA_SLIDESHOW: Playing init animation - frame 3/18[0m
+[0;32mI (4582) AGATA_SLIDESHOW: Displaying init slide 2: 172x320 (55040 pixels)[0m
+[0;32mI (4582) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (4582) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (4722) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (5022) AGATA_SLIDESHOW: Playing init animation - frame 4/18[0m
+[0;32mI (5022) AGATA_SLIDESHOW: Displaying init slide 3: 172x320 (55040 pixels)[0m
+[0;32mI (5022) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (5022) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (5162) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (5462) AGATA_SLIDESHOW: Playing init animation - frame 5/18[0m
+[0;32mI (5462) AGATA_SLIDESHOW: Displaying init slide 4: 172x320 (55040 pixels)[0m
+[0;32mI (5462) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (5462) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (5602) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (5902) AGATA_SLIDESHOW: Playing init animation - frame 6/18[0m
+[0;32mI (5902) AGATA_SLIDESHOW: Displaying init slide 5: 172x320 (55040 pixels)[0m
+[0;32mI (5902) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (5902) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (6042) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (6342) AGATA_SLIDESHOW: Playing init animation - frame 7/18[0m
+[0;32mI (6342) AGATA_SLIDESHOW: Displaying init slide 6: 172x320 (55040 pixels)[0m
+[0;32mI (6342) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (6342) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (6482) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (6782) AGATA_SLIDESHOW: Playing init animation - frame 8/18[0m
+[0;32mI (6782) AGATA_SLIDESHOW: Displaying init slide 7: 172x320 (55040 pixels)[0m
+[0;32mI (6782) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (6782) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (6922) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (7222) AGATA_SLIDESHOW: Playing init animation - frame 9/18[0m
+[0;32mI (7222) AGATA_SLIDESHOW: Displaying init slide 8: 172x320 (55040 pixels)[0m
+[0;32mI (7222) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (7222) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (7362) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (7662) AGATA_SLIDESHOW: Playing init animation - frame 10/18[0m
+[0;32mI (7662) AGATA_SLIDESHOW: Displaying init slide 9: 172x320 (55040 pixels)[0m
+[0;32mI (7662) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (7662) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (7802) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (8102) AGATA_SLIDESHOW: Playing init animation - frame 11/18[0m
+[0;32mI (8102) AGATA_SLIDESHOW: Displaying init slide 10: 172x320 (55040 pixels)[0m
+[0;32mI (8102) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (8102) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (8242) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (8542) AGATA_SLIDESHOW: Playing init animation - frame 12/18[0m
+[0;32mI (8542) AGATA_SLIDESHOW: Displaying init slide 11: 172x320 (55040 pixels)[0m
+[0;32mI (8542) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (8542) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (8682) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (8982) AGATA_SLIDESHOW: Playing init animation - frame 13/18[0m
+[0;32mI (8982) AGATA_SLIDESHOW: Displaying init slide 12: 172x320 (55040 pixels)[0m
+[0;32mI (8982) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (8982) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (9122) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (9422) AGATA_SLIDESHOW: Playing init animation - frame 14/18[0m
+[0;32mI (9422) AGATA_SLIDESHOW: Displaying init slide 13: 172x320 (55040 pixels)[0m
+[0;32mI (9422) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (9422) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (9562) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (9862) AGATA_SLIDESHOW: Playing init animation - frame 15/18[0m
+[0;32mI (9862) AGATA_SLIDESHOW: Displaying init slide 14: 172x320 (55040 pixels)[0m
+[0;32mI (9862) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (9862) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (10002) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (10302) AGATA_SLIDESHOW: Playing init animation - frame 16/18[0m
+[0;32mI (10302) AGATA_SLIDESHOW: Displaying init slide 15: 172x320 (55040 pixels)[0m
+[0;32mI (10302) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (10302) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (10442) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (10742) AGATA_SLIDESHOW: Playing init animation - frame 17/18[0m
+[0;32mI (10742) AGATA_SLIDESHOW: Displaying init slide 16: 172x320 (55040 pixels)[0m
+[0;32mI (10742) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (10742) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (10882) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (11182) AGATA_SLIDESHOW: Playing init animation - frame 18/18[0m
+[0;32mI (11182) AGATA_SLIDESHOW: Displaying init slide 17: 172x320 (55040 pixels)[0m
+[0;32mI (11182) AGATA_SLIDESHOW: Centering init at (34,0) for 172x320 image[0m
+[0;32mI (11182) AGATA_SLIDESHOW: Using line-by-line init display with DMA buffer[0m
+[0;32mI (11322) AGATA_SLIDESHOW: Line-by-line init display completed[0m
+[0;32mI (11322) AGATA_SLIDESHOW: Init animation completed, switching to hi loop[0m
+[0;32mI (12322) AGATA_SLIDESHOW: Playing hi loop - frame 1/11[0m
+[0;32mI (12322) AGATA_SLIDESHOW: Displaying hi slide 0: 172x320 (55040 pixels)[0m
+[0;32mI (12322) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (12322) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (12462) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (12862) AGATA_SLIDESHOW: Playing hi loop - frame 2/11[0m
+[0;32mI (12862) AGATA_SLIDESHOW: Displaying hi slide 1: 172x320 (55040 pixels)[0m
+[0;32mI (12862) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (12862) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (13002) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (13402) AGATA_SLIDESHOW: Playing hi loop - frame 3/11[0m
+[0;32mI (13402) AGATA_SLIDESHOW: Displaying hi slide 2: 172x320 (55040 pixels)[0m
+[0;32mI (13402) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (13402) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (13542) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (13942) AGATA_SLIDESHOW: Playing hi loop - frame 4/11[0m
+[0;32mI (13942) AGATA_SLIDESHOW: Displaying hi slide 3: 172x320 (55040 pixels)[0m
+[0;32mI (13942) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (13942) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (14082) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (14482) AGATA_SLIDESHOW: Playing hi loop - frame 5/11[0m
+[0;32mI (14482) AGATA_SLIDESHOW: Displaying hi slide 4: 172x320 (55040 pixels)[0m
+[0;32mI (14482) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (14482) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (14622) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (15022) AGATA_SLIDESHOW: Playing hi loop - frame 6/11[0m
+[0;32mI (15022) AGATA_SLIDESHOW: Displaying hi slide 5: 172x320 (55040 pixels)[0m
+[0;32mI (15022) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (15022) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (15162) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (15562) AGATA_SLIDESHOW: Playing hi loop - frame 7/11[0m
+[0;32mI (15562) AGATA_SLIDESHOW: Displaying hi slide 6: 172x320 (55040 pixels)[0m
+[0;32mI (15562) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (15562) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (15702) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (16102) AGATA_SLIDESHOW: Playing hi loop - frame 8/11[0m
+[0;32mI (16102) AGATA_SLIDESHOW: Displaying hi slide 7: 172x320 (55040 pixels)[0m
+[0;32mI (16102) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (16102) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (16242) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (16642) AGATA_SLIDESHOW: Playing hi loop - frame 9/11[0m
+[0;32mI (16642) AGATA_SLIDESHOW: Displaying hi slide 8: 172x320 (55040 pixels)[0m
+[0;32mI (16642) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (16642) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (16782) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (17182) AGATA_SLIDESHOW: Playing hi loop - frame 10/11[0m
+[0;32mI (17182) AGATA_SLIDESHOW: Displaying hi slide 9: 172x320 (55040 pixels)[0m
+[0;32mI (17182) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (17182) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (17322) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (17722) AGATA_SLIDESHOW: Playing hi loop - frame 11/11[0m
+[0;32mI (17722) AGATA_SLIDESHOW: Displaying hi slide 10: 172x320 (55040 pixels)[0m
+[0;32mI (17722) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (17722) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (17862) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (17862) AGATA_SLIDESHOW: Hi animation loop completed, restarting...[0m
+[0;32mI (18862) AGATA_SLIDESHOW: Playing hi loop - frame 1/11[0m
+[0;32mI (18862) AGATA_SLIDESHOW: Displaying hi slide 0: 172x320 (55040 pixels)[0m
+[0;32mI (18862) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (18862) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (19002) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (19402) AGATA_SLIDESHOW: Playing hi loop - frame 2/11[0m
+[0;32mI (19402) AGATA_SLIDESHOW: Displaying hi slide 1: 172x320 (55040 pixels)[0m
+[0;32mI (19402) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (19402) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (19542) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (19942) AGATA_SLIDESHOW: Playing hi loop - frame 3/11[0m
+[0;32mI (19942) AGATA_SLIDESHOW: Displaying hi slide 2: 172x320 (55040 pixels)[0m
+[0;32mI (19942) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (19942) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (20082) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (20482) AGATA_SLIDESHOW: Playing hi loop - frame 4/11[0m
+[0;32mI (20482) AGATA_SLIDESHOW: Displaying hi slide 3: 172x320 (55040 pixels)[0m
+[0;32mI (20482) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (20482) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (20622) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (21022) AGATA_SLIDESHOW: Playing hi loop - frame 5/11[0m
+[0;32mI (21022) AGATA_SLIDESHOW: Displaying hi slide 4: 172x320 (55040 pixels)[0m
+[0;32mI (21022) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (21022) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (21162) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (21562) AGATA_SLIDESHOW: Playing hi loop - frame 6/11[0m
+[0;32mI (21562) AGATA_SLIDESHOW: Displaying hi slide 5: 172x320 (55040 pixels)[0m
+[0;32mI (21562) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (21562) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (21702) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (22102) AGATA_SLIDESHOW: Playing hi loop - frame 7/11[0m
+[0;32mI (22102) AGATA_SLIDESHOW: Displaying hi slide 6: 172x320 (55040 pixels)[0m
+[0;32mI (22102) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (22102) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (22242) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (22642) AGATA_SLIDESHOW: Playing hi loop - frame 8/11[0m
+[0;32mI (22642) AGATA_SLIDESHOW: Displaying hi slide 7: 172x320 (55040 pixels)[0m
+[0;32mI (22642) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (22642) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (22782) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (23182) AGATA_SLIDESHOW: Playing hi loop - frame 9/11[0m
+[0;32mI (23182) AGATA_SLIDESHOW: Displaying hi slide 8: 172x320 (55040 pixels)[0m
+[0;32mI (23182) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (23182) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (23322) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (23722) AGATA_SLIDESHOW: Playing hi loop - frame 10/11[0m
+[0;32mI (23722) AGATA_SLIDESHOW: Displaying hi slide 9: 172x320 (55040 pixels)[0m
+[0;32mI (23722) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (23722) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (23862) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (24262) AGATA_SLIDESHOW: Playing hi loop - frame 11/11[0m
+[0;32mI (24262) AGATA_SLIDESHOW: Displaying hi slide 10: 172x320 (55040 pixels)[0m
+[0;32mI (24262) AGATA_SLIDESHOW: Centering at (35,0) for 172x320 image[0m
+[0;32mI (24262) AGATA_SLIDESHOW: Using line-by-line method with DMA-aligned buffer[0m
+[0;32mI (24402) AGATA_SLIDESHOW: Line-by-line centered display completed[0m
+[0;32mI (24402) AGATA_SLIDESHOW: Hi animation loop completed, restarting...[0m

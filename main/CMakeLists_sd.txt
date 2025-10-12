@@ -1,0 +1,4 @@
+idf_component_register(SRCS "main_sd.c" 
+                           "sd_images.c"
+                    INCLUDE_DIRS "."
+                    REQUIRES esp_timer driver fatfs)

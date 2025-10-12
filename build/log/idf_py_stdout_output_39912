@@ -1,0 +1,62 @@
+Command: ninja flash
+[1/5] cd /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/esp-idf/esptool_py && /Users/npisarev/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/partition_table/partition-table.bin /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/esp32-agata-robot.bin
+esp32-agata-robot.bin binary size 0x335170 bytes. Smallest app partition is 0x338000 bytes. 0x2e90 bytes (0%) free.
+Warning: The smallest app partition is nearly full (0% free space left)!
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/bootloader/esp-idf/esptool_py && /Users/npisarev/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/bootloader/bootloader.bin
+Bootloader binary size 0x57e0 bytes. 0x2820 bytes (31%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/components/esptool_py && /Users/npisarev/.espressif/tools/cmake/3.30.2/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf -D "SERIAL_TOOL=/Users/npisarev/.espressif/python_env/idf5.5_py3.13_env/bin/python;;/Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build -P /Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c6 -p /dev/cu.usbmodem101 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x10000 esp32-agata-robot.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.dev2
+Serial port /dev/cu.usbmodem101
+Connecting...
+Chip is ESP32-C6FH4 (QFN32) (revision v0.2)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: a0:85:e3:ff:fe:ae:c1:7c
+BASE MAC: a0:85:e3:ae:c1:7c
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00345fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22496 bytes to 13900...
+Writing at 0x00000000... (100 %)
+Wrote 22496 bytes (13900 compressed) at 0x00000000 in 0.2 seconds (effective 942.1 kbit/s)...
+Hash of data verified.
+Compressed 3363184 bytes to 263488...
+Writing at 0x00010000... (5 %)
+Writing at 0x000895e8... (11 %)
+Writing at 0x00131504... (17 %)
+Writing at 0x00181158... (23 %)
+Writing at 0x001cbbf9... (29 %)
+Writing at 0x0020568e... (35 %)
+Writing at 0x0023cf3d... (41 %)
+Writing at 0x0026ce9c... (47 %)
+Writing at 0x0029bdd2... (52 %)
+Writing at 0x002c90f6... (58 %)
+Writing at 0x002fc31c... (64 %)
+Writing at 0x0031fec0... (70 %)
+Writing at 0x003272a2... (76 %)
+Writing at 0x0032f1a4... (82 %)
+Writing at 0x00336100... (88 %)
+Writing at 0x0033cf9c... (94 %)
+Writing at 0x00344664... (100 %)
+Wrote 3363184 bytes (263488 compressed) at 0x00010000 in 9.3 seconds (effective 2892.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 122...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (122 compressed) at 0x00008000 in 0.0 seconds (effective 585.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

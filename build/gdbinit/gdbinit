@@ -1,0 +1,2 @@
+source /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/gdbinit/symbols
+source /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/gdbinit/connect

@@ -1,0 +1,20 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/bootloader/esp-idf/esptool_py && /Users/npisarev/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/bootloader/bootloader.bin
+Bootloader binary size 0x57e0 bytes. 0x2820 bytes (31%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Building C object CMakeFiles/esp32-agata-robot.elf.dir/project_elf_src_esp32c6.c.obj
+[8/10] Linking CXX executable esp32-agata-robot.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/esp32-agata-robot.bin
+[10/10] cd /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/esp-idf/esptool_py && /Users/npisarev/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/npisarev/Projects/ESP32/ESP-IDF/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/partition_table/partition-table.bin /Users/npisarev/Projects/ESP32/ESP32-Agata-robot/build/esp32-agata-robot.bin
+esp32-agata-robot.bin binary size 0x335170 bytes. Smallest app partition is 0x338000 bytes. 0x2e90 bytes (0%) free.
+Warning: The smallest app partition is nearly full (0% free space left)!
